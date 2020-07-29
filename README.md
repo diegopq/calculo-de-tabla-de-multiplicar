@@ -1,4 +1,4 @@
-# calculo-de-tablas-de-multiplicar
+# Calculo de tablas de multiplicar
 Aplicación de linea de comandos hecha en Node para calcular las tablas de multiplicar de acuerdo a los comandos y flags introducidos
 
 ## Crear archivo con la tabla de multiplicar
