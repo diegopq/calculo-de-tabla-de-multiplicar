@@ -1,12 +1,16 @@
+
 const options = {
     //configuracion de flags que el comando listar puede recibir
     base: {
-        demand: true,
-        alias: "b", //el alias es la abreviacion del comando en terminal en lugar de usar --base se usa -b
+        demandOption: true,
+        alias: "b", //el alias es la abreviacion del comando en terminal en lugar de usar 
+        //--base se usa - b
+        describe: "Indica la base de la tabla de multiplicar"
     },
     limite: {
         alias: "l",
         default: 10,
+        describe: "Indica el numero maximo de la tabla de multiplicar"
     },
 };
 
@@ -27,6 +31,4 @@ const argv = require("yargs")
     .help().argv; //argv contiene los parametros que se pasan en la terminal
 
 //exportamos el objeto argv
-module.exports = {
-    argv,
-};
+module.exports = argv;

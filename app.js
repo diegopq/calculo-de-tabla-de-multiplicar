@@ -5,11 +5,14 @@
 //const fs = require('./fs'); paquetes que se crean en el proyecto se identifican con ./path
 
 //importa el objeto
-const argv = require("./config/yargs").argv;
+const argv = require("./config/yargs");
 //importa la funcion crear por medio de desestructuración
-const { crearArchivo, listarTabla } = require("./multiplicar/multiplicar");
+const { crearArchivo, listarTabla } = require("./helpers/multiplicar");
 
 const colors = require("colors");
+
+//limpia la consola o terminal
+console.clear();
 
 //recibimos el primer comando que se escriba en la terminal
 let comando = argv._[0];
@@ -28,6 +31,6 @@ switch (comando) {
             .catch((e) => console.log(e));
         break;
     default:
-        console.log(`Comando "${comando}" no reconocido`.red);
+        console.log(`Comando "${comando}" no reconocido`.red.bold);
         break;
 }
