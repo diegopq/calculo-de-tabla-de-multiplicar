@@ -12,3 +12,11 @@ Para mostrar la tabla de multiplicar deseada por consola se usa el comando:
 `node app listar --base 10 --limite 30`
 - base es el número del cual se quiere calcular la tabla de multiplicar, este valor es requerido
 - limite es el número hasta donde se quiere calcular la tabla de multiplicar, este valor es opcional, si no se indica el limite es 10
+
+```
+Opciones:
+      --version  Muestra número de versión                            [booleano]
+      --help     Muestra ayuda                                        [booleano]
+  -b, --base     Indica la base de la tabla de multiplicar           [requerido]
+  -l, --limite   Indica el numero maximo de la tabla de multiplicar[defecto: 10]
+```
